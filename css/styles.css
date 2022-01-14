@@ -1,10 +1,14 @@
-/* Google Font */
+/* ----------
+ Google Font
+------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
-/* Navigation */
+/* -----------
+  Navigation
+------------- */
 
 nav{
     display: flex;
@@ -20,7 +24,7 @@ nav ul{
 nav li a{
    text-decoration: none;
    color: black;
-   font-family:serif;
+   font-family: 'Poppins', sans-serif;
 }
 nav li{
     list-style: none;
@@ -32,7 +36,9 @@ nav li{
     justify-items: center;   
 }
 
-/* Header Part */
+/* -----------
+  Header Part 
+-------------*/
 
 .header-top{
     display: flex;
@@ -41,7 +47,6 @@ nav li{
 .header-top-left{
     margin-top: 100px;
     margin-left: 120px;
-    
 }
 h1{
     font-family: 'Poppins', sans-serif;
@@ -54,7 +59,6 @@ h1{
     padding-top: 5%;
     padding-bottom: 5%;
     width: 50%;
-
 }
 .button{
     background-color: #E02C6D;
@@ -78,13 +82,99 @@ h1{
     height: min-content;
 }
 .half-width img:hover{
-    width: 80%;
+    width: 74%;
     transition: 1s;
 }
 
-/* Body */
+/* -----------
+  Brand Logo
+ -------------*/
+
+ hr{
+    width: 90%;
+ }
+ .logos{
+    display: grid;
+    grid-template-columns: repeat(7 ,1fr);
+    justify-content: center;
+    padding: 10px;  
+    margin-left: 80px;
+ }
+
+ /* -------------------
+   Popular Collection
+  ---------------------*/
+
+.popular-collection{
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;;
+    
+}
+.center-h2{
+    text-align: center;
+    margin-bottom: 35px;
+}
+.container-one{
+    background-color: white;
+    height: 476px;
+    width: 329px;
+}
+.container-one img{
+    width: 300px;
+    height: 256px;
+    margin: 0;
+}
+.pc-info h2{
+    width: 151px;
+    height: 40px;
+    margin: 0;
+}
+.pc-info h3{
+    width: 82px;
+    height: 36px;
+    margin: 0;
+}
+.star{
+    display: flex;
+    justify-content: center;
+}
+.star p{
+    margin-left: 20px;
+}
+.text{
+    width: 196px;
+    height: 60px;
+    margin: 0;
+}
+
+/* -------
+    Body
+ --------*/
 
 body{
     font-family: 'Roboto Condensed', sans-serif;
     background-color: whitesmoke;
+}
+
+/*------
+Footer 
+-------*/
+
+footer{
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+.footer h2{
+    margin-bottom: 0;
+}
+.footer.text{
+    margin-top: 0;
+}
+.footer-link{
+    font-size: 25px;
+    opacity: 0.8;
 }
