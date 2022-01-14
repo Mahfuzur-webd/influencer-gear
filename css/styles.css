@@ -1,6 +1,7 @@
 /* Google Font */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 /* Navigation */
@@ -10,23 +11,76 @@ nav{
     justify-content: space-between;
     margin: 0 50px;
 }
+nav h3{
+    font-size: 25px;
+}
 nav ul{
     display: flex;
 }
 nav li a{
    text-decoration: none;
    color: black;
+   font-family:serif;
 }
 nav li{
     list-style: none;
-    margin: 10px 15px;
+    margin: 10px 25px;
     justify-items: center;
 }
 .nav-icon{
-    margin: 10px 15px;
+    margin: 10px 25px;
     justify-items: center;   
 }
 
+/* Header Part */
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+}
+.header-top-left{
+    margin-top: 100px;
+    margin-left: 120px;
+    
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.half-width{
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 50%;
+
+}
+.button{
+    background-color: #E02C6D;
+    width: 196px;
+    height: 44px;
+    border: 0;
+    border-radius: 41px;
+    margin-top: 18px;
+    padding: 10px 24px 10px 24px;
+    color: white;
+    font-weight: 700;
+}
+.button:hover{
+    background-color: #a42323;
+}
+.fa-arrow-right{
+    margin-left: 10px;
+}
+.half-width img{
+    width: 70%;
+    height: min-content;
+}
+.half-width img:hover{
+    width: 80%;
+    transition: 1s;
+}
 
 /* Body */
 
