@@ -12,6 +12,7 @@
  body{
     font-family: 'Roboto Condensed', sans-serif;
     background-color: whitesmoke;
+    width: 100%;
 }
 
 /* -----------
@@ -56,6 +57,9 @@ nav li{
     margin-top: 100px;
     margin-left: 120px;
 }
+.top{
+    display: flex;
+}
 h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -88,25 +92,33 @@ h1{
 .half-width img{
     width: 70%;
     height: min-content;
+    padding: 10px;
 }
 .half-width img:hover{
-    width: 74%;
-    transition: 1s;
+    background-color: lightgray;
+    transition: 3s;
+    border-radius: 25% 10%;
 }
+
+
 
 /* -----------
   Brand Logo
  -------------*/
 
  hr{
-    width: 90%;
+    width: 80%;
+    margin-left:8%;
+    justify-content: center;
  }
  .logos{
-    display: grid;
-    grid-template-columns: repeat(7 ,1fr);
-    justify-content: center;
+    display: flex;
     padding: 10px;  
     margin-left: 80px;
+    justify-content: center;
+ }
+ .logos img{
+     margin-right: 150px;
  }
 
  /* -------------------
@@ -127,8 +139,8 @@ h1{
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 0;
     grid-column-gap: 0;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 .product{
     padding: 10px 10px;
@@ -214,7 +226,7 @@ h1{
 .youtube-motivate{
     width: 60%;
     height: min-content;
-    padding-left: 10%;
+    padding-left: 4%;
     padding-top: 5%;
     padding-bottom: 5%;
     width: 50%;
@@ -232,6 +244,7 @@ footer{
     padding-top: 5px;
     padding-bottom: 15px;
     width: 100%;
+    margin-left: -10px;
 }
 .footer h2{
     margin-bottom: 0;
@@ -243,4 +256,129 @@ footer{
     font-size: 25px;
     opacity: 0.8;
     padding-right: 20px;
+}
+
+/*-------------
+  Media Query 
+--------------*/
+
+/* Mobile Devices */
+
+@media (max-width: 700px) {
+    header nav {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 0;
+        font-size: 11px;
+    }
+    .top{
+        
+        flex-wrap: wrap;
+        margin-left: -10px;
+    }
+
+    body{
+        width: 100%;
+    }
+     .collection{
+         margin-left: -16px;
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .see-more{
+        margin-left: -130px;
+    }
+
+    .logos{
+        flex-wrap: wrap;
+        margin: 10%;
+        margin-left: 30%;
+        
+    }
+    .special{
+        flex-wrap: wrap;
+    }
+
+    hr{
+        width: 150px;
+    }
+
+    .motivation{
+        flex-wrap: wrap;
+    }
+    .youtube-motivate{
+        width: 20%;
+        height: 20%;
+    }
+    footer{
+        width: 100%;
+        margin-left: 30px;
+    }
+
+   
+}
+
+@media (min-width:700px) and (max-width:900px) {
+
+    header nav {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 0;
+        font-size: 11px;
+    }
+    .top{
+        
+        flex-wrap: wrap;
+        margin-left: -10px;
+    }
+    body{
+        width: 100%;
+    }
+     .collection{
+         margin-left: -16px;
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+    .see-more{
+        margin-left: -130px;
+    }
+
+    .logos{
+        flex-wrap: wrap;
+        margin: 10%;
+        margin-left: 30%;
+        
+    }
+    .special{
+        flex-wrap: wrap;
+    }
+
+    hr{
+        width: 150px;
+        margin-left: 25%;
+    }
+
+    .motivation{
+        flex-wrap: wrap;
+    }
+    .youtube-motivate{
+        width: 20%;
+        height: 20%;
+    }
+    footer{
+        width: 100%;
+        margin-left: 30px;
+    }
+
+   
+}
+   
+
+
+@media (min-width: 900px) {
+    body {
+        grid-template-columns: repeat( 1fr);
+    }
 }
