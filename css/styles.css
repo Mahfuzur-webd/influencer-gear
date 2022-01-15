@@ -5,6 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* -------
+    Body
+ --------*/
+
+ body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: whitesmoke;
+}
 
 /* -----------
   Navigation
@@ -185,20 +193,37 @@ h1{
     border: 0;
 }
 
+/*-------------------
+  Motivate Yourself 
+--------------------*/
 
-
-/* -------
-    Body
- --------*/
-
-body{
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: whitesmoke;
+.motivation{
+    display: flex;
+}
+.highlight{
+    color: orange;
+}
+.motivate{
+    width: 40%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 50%;
+    margin-left: 110px;
+}
+.youtube-motivate{
+    width: 60%;
+    height: min-content;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 50%;
+    margin-right: 270px;
 }
 
-/*------
-Footer 
--------*/
+/*--------
+  Footer 
+---------*/
 
 footer{
     background-color: #0A0826;
@@ -214,7 +239,8 @@ footer{
 .footer.text{
     margin-top: 0;
 }
-.footer-link{
+.footer-link i{
     font-size: 25px;
     opacity: 0.8;
+    padding-right: 20px;
 }
