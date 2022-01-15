@@ -105,47 +105,87 @@ h1{
    Popular Collection
   ---------------------*/
 
+
 .popular-collection{
-    margin-top: 100px;
-    font-family: 'Poppins', sans-serif;;
-    
+    margin-top: 80px;
 }
-.center-h2{
+.popular-collection h2{
+    font-size:28px;
     text-align: center;
-    margin-bottom: 35px;
 }
-.container-one{
+
+.collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.product{
+    padding: 10px 10px;
+    border-radius: 10px;
+    height: 430px;
+    width: 320px;
+    margin: 30px;
     background-color: white;
-    height: 476px;
-    width: 329px;
+    align-items: center;
+    box-shadow: 1px 1px 2px 2px lavender;
 }
-.container-one img{
-    width: 300px;
+
+.product-banner img{
+    width: 320px;
     height: 256px;
-    margin: 0;
-}
-.pc-info h2{
-    width: 151px;
-    height: 40px;
-    margin: 0;
-}
-.pc-info h3{
-    width: 82px;
-    height: 36px;
-    margin: 0;
-}
-.star{
-    display: flex;
+    margin-bottom: 16px;
     justify-content: center;
 }
-.star p{
-    margin-left: 20px;
+
+.product-info h3{
+    margin-top: -10px;
+    margin-left: 0px;
+    color: #18191F;
+    margin-bottom: 6px;
+    font-weight: 700;
 }
-.text{
-    width: 196px;
-    height: 60px;
-    margin: 0;
+.product-info p{
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: -2px;
 }
+
+.star{
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.star,p{
+    margin-right: 11px;
+}
+.star-full{
+    color: #FFC014;
+}
+.star-half{
+    color:  #FFC014;
+    margin-left: 3.24px;
+    margin-right: 10.71px;
+}
+.product-explain p{
+    margin-top: 0;
+    font-size: 14px;
+}
+.see-more a{
+    margin-top: 150px;
+    margin-left: 75%;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 40px;
+    color: #E02C6D;
+    border: 0;
+}
+
+
 
 /* -------
     Body
